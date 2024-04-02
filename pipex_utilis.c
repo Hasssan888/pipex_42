@@ -85,8 +85,8 @@ void	ft_excute(char *av, char **env)
 	int		i;
 
 	i = -1;
-	if (ft_strcmp(av, "") == 0 || ft_strcmp(av, ".") == 0 || ft_strcmp(av,
-			" ") == 0)
+	if (ft_strcmp(av, "") == 0 || ft_strcmp(av, ".") == 0
+		|| ft_strcmp(&av[ft_strlen(av) - 1], " ") == 0)
 		ft_error(av);
 	else
 	{

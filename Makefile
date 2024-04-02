@@ -1,6 +1,6 @@
 CC = cc 
 
-FLAGC = -Wall -Wextra -Werror -fsanitize=address -g
+FLAGC = -Wall -Wextra -Werror
 
 NAME = pipex
 

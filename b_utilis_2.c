@@ -52,7 +52,10 @@ void	ft_norm_1(int ac, char **av, t_pipex *pipex)
 void	ft_normi_2(t_pipex *pipex)
 {
 	while (pipex->i != -1)
+	{
 		pipex->i = waitpid(pipex->r, &pipex->status_1, 0);
+		pipex->i = wait(NULL);
+	}
 	dup2(pipex->save1, STDIN_FILENO);
 	close(pipex->save1);
 }
